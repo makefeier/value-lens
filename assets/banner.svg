@@ -1,39 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-label="value-lens banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-label="value-lens banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/><stop offset="0.55" stop-color="#1e1b4b"/><stop offset="1" stop-color="#312e81"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/>
-    </linearGradient>
-    <linearGradient id="stack" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/>
+      <stop offset="0" stop-color="#1a1206"/><stop offset="1" stop-color="#292524"/>
     </linearGradient>
   </defs>
-  <rect width="960" height="220" fill="url(#bg)"/>
-  <g opacity="0.14" stroke="#e0e7ff" stroke-width="1">
-    <path d="M0 185 Q240 160 480 185 T960 185" fill="none"/>
-    <path d="M0 200 Q240 178 480 200 T960 200" fill="none"/>
+  <rect width="960" height="240" fill="url(#bg)"/>
+  <g font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="480" y="98" font-size="42" font-weight="700" fill="#f1f5f9">识货</text>
+    <rect x="452" y="114" width="56" height="3" rx="1.5" fill="#f59e0b"/>
+    <text x="480" y="146" font-size="17" fill="#94a3b8">价格是投影，不是价值本身</text>
+    <g font-size="14">
+      <rect x="225" y="172" width="150" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="300" y="194" fill="#fcd34d">七层价值栈</text>
+      <rect x="405" y="172" width="150" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="480" y="194" fill="#fcd34d">处置六账</text>
+      <rect x="585" y="172" width="150" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="660" y="194" fill="#fcd34d">价值定律</text>
+    </g>
   </g>
-  <!-- 七层价值栈 -->
-  <g transform="translate(70,46)">
-    <rect x="26" y="0"   width="168" height="14" rx="4" fill="url(#stack)" opacity="0.45"/>
-    <rect x="18" y="18"  width="184" height="14" rx="4" fill="url(#stack)" opacity="0.6"/>
-    <rect x="10" y="36"  width="200" height="14" rx="4" fill="url(#stack)" opacity="0.75"/>
-    <rect x="2"  y="54"  width="216" height="14" rx="4" fill="url(#stack)" opacity="0.9"/>
-    <rect x="-6" y="72"  width="232" height="14" rx="4" fill="url(#gold)"/>
-    <rect x="2"  y="90"  width="216" height="14" rx="4" fill="url(#stack)" opacity="0.9"/>
-    <rect x="10" y="108" width="200" height="14" rx="4" fill="url(#stack)" opacity="0.6"/>
-    <text x="248" y="70" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#c7d2fe">效用 · 稀缺 · 信号 · 情感 · 期权 · 系统 · 价格</text>
-    <text x="248" y="92" font-family="Segoe UI, sans-serif" font-size="12" fill="#818cf8">价格是投影，不是价值本身</text>
-  </g>
-  <text x="430" y="86" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="46" font-weight="bold" fill="url(#gold)">识货 · Value Lens</text>
-  <text x="432" y="126" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="19" fill="#e0e7ff">万物价值评估引擎 —— 价格≠价值，背离处即机会或陷阱</text>
-  <g font-family="Segoe UI, sans-serif" font-size="12.5" fill="#a5b4fc">
-    <text x="432" y="162">◆ 三折叠：对谁 · 哪一层 · 什么时候</text>
-    <text x="432" y="184">◆ 处置六账：买 / 卖 / 留 / 扔 / 投 / 撤</text>
-    <text x="700" y="162">◆ 价值物理定律 ×7</text>
-    <text x="700" y="184">◆ LangGraph 装配产线自带</text>
-  </g>
-  <text x="70" y="206" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">懂行家族 · value-lens v1.0</text>
+  <text x="40" y="36" font-size="12" fill="#64748b" font-family="'Segoe UI',sans-serif">value-lens</text>
+  <text x="930" y="222" font-size="11" fill="#475569" text-anchor="end" font-family="'Segoe UI',sans-serif">v1.0.0</text>
 </svg>
