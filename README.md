@@ -49,17 +49,16 @@ flowchart LR
 
 七层栈同样适用于评估人与事（合租、合伙、承诺、机会），但铁律升级：**不做道德审判、不给人格定性、不预测具体行为**，边界提示强制输出。
 
-## ⚙️ 文档装配产线（LangGraph + 回溯机制）
+## ⚙️ 文档装配产线（回溯式分节生产）
 
 SKILL.md 不是一次性写成的：分节草稿（`drafts/`）→ 逐节校验（`sections.json` 规格）→ 失败节**定点回溯**（不整篇重写，好节原封不动）→ 全绿组装 → 终检写盘。跨次运行通过 `state.json` 记录尝试预算（3 次/节），超限告警"换方法而非重试"。设计与实测记录见 [DESIGN.md](DESIGN.md)。
 
-```bash
-pip install langgraph
-python doc_pipeline.py .            # 校验+组装，或输出定点修复报告
-python doc_pipeline.py . --reset    # 清空尝试历史
-```
+产线引擎独立维护于 [doc-pipeline](https://github.com/makefeier/doc-pipeline)（LangGraph 可选：未安装自动降级内置执行器）。修改任一节草稿后：
 
-本仓库产线是自包含的通用引擎：任何长文档目录，建一份 `sections.json`（章节/最小长度/必需元素）+ `drafts/` 即可上产线。
+```bash
+pip install doc-pipeline  # 或 clone doc-pipeline 仓库后直接运行
+python doc_pipeline.py .  # 在本仓库根目录跑：校验+组装，或输出定点修复报告
+```
 
 ## 文件
 
@@ -67,8 +66,7 @@ python doc_pipeline.py . --reset    # 清空尝试历史
 |---|---|
 | `SKILL.md` | 方法论主文件（产线产物）|
 | `sections.json` | 产线规格（10 节标题 / 最小长度 / 必需元素）|
-| `drafts/` | 各节草稿，修改后重跑产线即可 |
-| `doc_pipeline.py` | LangGraph 装配产线（自包含通用版）|
+| `drafts/` | 各节草稿，修改后用 [doc-pipeline](https://github.com/makefeier/doc-pipeline) 重跑即可 |
 | `DESIGN.md` | 产线设计说明：图结构 / 回溯机制 / 实测记录 |
 | `assets/banner.svg` | 详情页横幅 |
 | `LICENSE` | MIT |
