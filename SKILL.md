@@ -1,6 +1,6 @@
 ---
 name: value-lens
-description: 识货 · Value Lens：万物价值评估引擎。对任何"人/事/物"回答：它值多少、对谁值、现在该怎么处置（买/卖/留/扔/投/撤）。七层价值栈（效用/稀缺/信号/情感/期权/系统/价格）逐层独立评估再按主体加权合成，配价值物理定律（半衰期、处置不等式、沉没成本隔离、禀赋检验、共识警惕、人为稀缺识别、峰终定律）。价格≠价值，背离处即机会或陷阱。零硬编码行情，现场查证并挂三色置信标签。
+description: 值不值、值多少钱、值得买吗、该不该卖、断舍离、识货、value lens 时加载。识货 · 万物价值评估引擎：七层价值栈（效用/稀缺/信号/情感/期权/系统/价格）按主体加权合成，配价值物理定律与处置六账，结论只有买/卖/留/扔/投/撤。价格≠价值。零硬编码行情。
 triggers:
 - 值不值
 - 值多少钱
@@ -9,6 +9,10 @@ triggers:
 - 识货
 - 断舍离
 - value lens
+version: v1.0.0
+author: makefeier
+platforms: [opensquilla, hermes]
+tags: [value-assessment, decision-making, opensquilla-skill]
 ---
 
 # 识货 · Value Lens（万物价值评估引擎 v1）
